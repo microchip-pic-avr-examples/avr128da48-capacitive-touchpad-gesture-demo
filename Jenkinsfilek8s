@@ -14,7 +14,7 @@ pipeline {
     }
 	
 	environment {		
-		GITHUB_URL ='https://github.com/microchip-pic-avr-solutions/avr128da48-snake-game-demo.git'
+		GITHUB_URL ='https://github.com/microchip-pic-avr-examples/avr128da48-snake-game-demo.git'
 		BITBUCKET_URL = 'https://bitbucket.microchip.com/scm/mpas/aavr128da48-snake-game-demo.git'
 		DEPLOY_TOOL_URL = 'https://bitbucket.microchip.com/scm/citd/tool-github-deploy.git'
 		DEPLOY_SCRIPT_DIR = 'tool-github-deploy'
@@ -46,7 +46,7 @@ pipeline {
 				script {
 					execute("git clone ${env.DEPLOY_TOOL_URL}")		
 					
-					withCredentials([usernamePassword(credentialsId: 'pic-avr-solutions.github.com', usernameVariable: 'USER_NAME', passwordVariable:'USER_PASS' )]) {					
+					withCredentials([usernamePassword(credentialsId: '8bit-examples.github.com', usernameVariable: 'USER_NAME', passwordVariable:'USER_PASS' )]) {					
 						execute("cd ${env.DEPLOY_SCRIPT_DIR} && bash ${env.DEPLOY_SCRIPT_FILE} ${env.BITBUCKET_URL} ${env.GITHUB_URL} ${USER_NAME} ${USER_PASS}")	
 					}	
 
