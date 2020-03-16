@@ -2,6 +2,10 @@
 ## Objective:
 This example consists a basic ‘Snake Game Demo’ implemented to demonstrate the 2D touch surface gestures with the help of Microchip® AVR128DA48 Curiosity Nano and QT2 Xplained Pro extension boards. This application example showcases the advanced touch capabilities of ‘PTC’ peripheral, and low power capabilities of the AVR-DA MCUs.
 
+## Related Application Note:
+[2D Gesture Implementation with Capacitive Touch Surface Using AVR-DA Microcontroller](https://microchip.com/DS00003433)
+
+
 ## Peripherals Involved:
 1. Peripheral Touch Controller (PTC)
 2. Event System
@@ -24,7 +28,3 @@ This example consists a basic ‘Snake Game Demo’ implemented to demonstrate t
 6.	Use touch surface on QT2 to steer the snake towards food.
 7.	After 20 seconds of inactivity MCU will go to sleep.
 8.	Tap the touch surface anywhere to wake-up the MCU.
-
-
-## Related Application Note:
-Snake Game with 2D-Capacitive Touch Surface and AVR-DA Peripheral Touch Controller (‘PTC’)

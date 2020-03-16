@@ -123,7 +123,7 @@
       </AcmeProjectConfig>
     </AcmeProjectConfig>
     <avrtool>com.atmel.avrdbg.tool.nedbg</avrtool>
-    <avrtoolserialnumber>MCHP3280031800000095</avrtoolserialnumber>
+    <avrtoolserialnumber>MCHP3280031800000097</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x1E9708</avrdeviceexpectedsignature>
     <avrtoolinterface>UPDI</avrtoolinterface>
     <com_atmel_avrdbg_tool_nedbg>
@@ -134,7 +134,7 @@
         <InterfaceName>UPDI</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.nedbg</ToolType>
-      <ToolNumber>MCHP3280031800000095</ToolNumber>
+      <ToolNumber>MCHP3280031800000097</ToolNumber>
       <ToolName>nEDBG</ToolName>
     </com_atmel_avrdbg_tool_nedbg>
     <avrtoolinterfaceclock>750000</avrtoolinterfaceclock>
@@ -210,71 +210,71 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-  <avrgcc.common.Device>-mmcu=avr128da48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\gcc\dev\avr128da48"</avrgcc.common.Device>
-  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-  <avrgcc.common.outputfiles.lss>False</avrgcc.common.outputfiles.lss>
-  <avrgcc.common.outputfiles.eep>False</avrgcc.common.outputfiles.eep>
-  <avrgcc.common.outputfiles.srec>False</avrgcc.common.outputfiles.srec>
-  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
-  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>DEBUG</Value>
-    </ListValues>
-  </avrgcc.compiler.symbols.DefSymbols>
-  <avrgcc.compiler.directories.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\include</Value>
-      <Value>../Config</Value>
-      <Value>../examples/include</Value>
-      <Value>../include</Value>
-      <Value>../utils</Value>
-      <Value>../utils/assembler</Value>
-      <Value>../</Value>
-      <Value>../documentation</Value>
-      <Value>../qtouch</Value>
-      <Value>../qtouch/datastreamer</Value>
-      <Value>../qtouch/include</Value>
-    </ListValues>
-  </avrgcc.compiler.directories.IncludePaths>
-  <avrgcc.compiler.optimization.level>Optimize most (-O3)</avrgcc.compiler.optimization.level>
-  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
-  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>libqtm_touch_key_avr_da_0x0002.a</Value>
-      <Value>libqtm_surface_gestures_avr_da_0x0023.a</Value>
-      <Value>libqtm_surface_cs_avr_da_0x0021.a</Value>
-      <Value>libqtm_binding_layer_avr_da_0x0005.a</Value>
-      <Value>libqtm_acq_avr_da_0x0037.a</Value>
-      <Value>libm</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
-  <avrgcc.linker.libraries.LibrarySearchPaths>
-    <ListValues>
-      <Value>../qtouch/lib/gcc</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.LibrarySearchPaths>
-  <avrgcc.assembler.general.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\include</Value>
-      <Value>../Config</Value>
-      <Value>../examples/include</Value>
-      <Value>../include</Value>
-      <Value>../utils</Value>
-      <Value>../utils/assembler</Value>
-      <Value>../</Value>
-      <Value>../documentation</Value>
-      <Value>../qtouch</Value>
-      <Value>../qtouch/datastreamer</Value>
-      <Value>../qtouch/include</Value>
-    </ListValues>
-  </avrgcc.assembler.general.IncludePaths>
-  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
-</AvrGcc>
+        <avrgcc.common.Device>-mmcu=avr128da48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\gcc\dev\avr128da48"</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>False</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>False</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>False</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\include</Value>
+            <Value>../Config</Value>
+            <Value>../examples/include</Value>
+            <Value>../include</Value>
+            <Value>../utils</Value>
+            <Value>../utils/assembler</Value>
+            <Value>../</Value>
+            <Value>../documentation</Value>
+            <Value>../qtouch</Value>
+            <Value>../qtouch/datastreamer</Value>
+            <Value>../qtouch/include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize most (-O3)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libqtm_touch_key_avr_da_0x0002.a</Value>
+            <Value>libqtm_surface_gestures_avr_da_0x0023.a</Value>
+            <Value>libqtm_surface_cs_avr_da_0x0021.a</Value>
+            <Value>libqtm_binding_layer_avr_da_0x0005.a</Value>
+            <Value>libqtm_acq_avr_da_0x0037.a</Value>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../qtouch/lib/gcc</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.LibrarySearchPaths>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.0.18\include</Value>
+            <Value>../Config</Value>
+            <Value>../examples/include</Value>
+            <Value>../include</Value>
+            <Value>../utils</Value>
+            <Value>../utils/assembler</Value>
+            <Value>../</Value>
+            <Value>../documentation</Value>
+            <Value>../qtouch</Value>
+            <Value>../qtouch/datastreamer</Value>
+            <Value>../qtouch/include</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>

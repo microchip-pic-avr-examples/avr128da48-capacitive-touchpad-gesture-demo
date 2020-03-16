@@ -20,10 +20,6 @@ struct SysFlags
 	uint8_t Scheduler1s		: 1;
 	uint8_t GameOver		: 1;
 	uint8_t NewFoodCreated	: 1;
-	uint8_t SwLeft			: 1;
-	uint8_t SwRight			: 1;
-	uint8_t SwUp			: 1;
-	uint8_t SwDown			: 1;
 	uint8_t I2CBusy			: 1;
 	uint8_t Sleep			: 1;
 	uint8_t WakeUp			: 1;

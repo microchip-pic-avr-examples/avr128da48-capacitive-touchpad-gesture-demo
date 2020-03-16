@@ -117,59 +117,34 @@ static void CheckTouchInput(void)
 	//Decode touch Swipes
 	if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == RIGHT_SWIPE)
 	{
-		Flags.SwRight = 1;
+		if(Snake.Dir != LEFT)
+		{
+			Snake.Dir = RIGHT;
+		}
 	}
 	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == LEFT_SWIPE)
-	{
-		Flags.SwLeft = 1;
-	}
-	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == UP_SWIPE)
-	{
-		Flags.SwUp = 1;
-	}
-	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == DOWN_SWIPE)
-	{
-		Flags.SwDown = 1;
-	}
-	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xF0) == TAP)
-	{
-		//Flags.Tap = 1;
-	}
-	
-	//Give Snake commands depending on touch swipes
-	if(Flags.SwUp)
-	{
-		if(Snake.Dir != DOWN)
-		{
-			Snake.Dir = UP;
-		}
-		Flags.SwUp = 0;
-	}
-	
-	if(Flags.SwDown)
-	{
-		if(Snake.Dir != UP)
-		{
-			Snake.Dir = DOWN;
-		}
-		Flags.SwDown = 0;
-	}
-	
-	if(Flags.SwLeft)
 	{
 		if(Snake.Dir != RIGHT)
 		{
 			Snake.Dir = LEFT;
 		}
-		Flags.SwLeft = 0;
 	}
-	
-	if(Flags.SwRight)
+	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == UP_SWIPE)
 	{
-		if(Snake.Dir != LEFT)
+		if(Snake.Dir != DOWN)
 		{
-			Snake.Dir = RIGHT;
+			Snake.Dir = UP;
 		}
-		Flags.SwRight = 0;
+	}
+	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xf0) == DOWN_SWIPE)
+	{
+		if(Snake.Dir != UP)
+		{
+			Snake.Dir = DOWN;
+		}
+	}
+	else if ((qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture & 0xF0) == TAP)
+	{
+		//Flags.Tap = 1;
 	}
 }
