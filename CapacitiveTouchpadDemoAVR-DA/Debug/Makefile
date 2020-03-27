@@ -191,9 +191,9 @@ src/rtc.d \
 src/slpctrl.d \
 src/usart.d
 
-OUTPUT_FILE_PATH +=SnakeDemoAVRDA_QT2.elf
+OUTPUT_FILE_PATH +=CapacitiveTouchpadDemoAVR-DA.elf
 
-OUTPUT_FILE_PATH_AS_ARGS +=SnakeDemoAVRDA_QT2.elf
+OUTPUT_FILE_PATH_AS_ARGS +=CapacitiveTouchpadDemoAVR-DA.elf
 
 ADDITIONAL_DEPENDENCIES:=
 
@@ -378,10 +378,10 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: AVR/GNU Linker : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="SnakeDemoAVRDA_QT2.map" -Wl,--start-group -Wl,-lqtm_touch_key_avr_da_0x0002 -Wl,-lqtm_surface_gestures_avr_da_0x0023 -Wl,-lqtm_surface_cs_avr_da_0x0021 -Wl,-lqtm_binding_layer_avr_da_0x0005 -Wl,-lqtm_acq_avr_da_0x0037 -Wl,-lm  -Wl,--end-group -Wl,-L"../qtouch/lib/gcc"  -Wl,--gc-sections -mmcu=avr128da48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.0.18\gcc\dev\avr128da48"  
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="CapacitiveTouchpadDemoAVR-DA.map" -Wl,--start-group -Wl,-lqtm_touch_key_avr_da_0x0002 -Wl,-lqtm_surface_gestures_avr_da_0x0023 -Wl,-lqtm_surface_cs_avr_da_0x0021 -Wl,-lqtm_binding_layer_avr_da_0x0005 -Wl,-lqtm_acq_avr_da_0x0037 -Wl,-lm  -Wl,--end-group -Wl,-L"../qtouch/lib/gcc"  -Wl,--gc-sections -mmcu=avr128da48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.0.18\gcc\dev\avr128da48"  
 	@echo Finished building target: $@
-	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "SnakeDemoAVRDA_QT2.elf" "SnakeDemoAVRDA_QT2.hex"
-	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-size.exe" "SnakeDemoAVRDA_QT2.elf"
+	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "CapacitiveTouchpadDemoAVR-DA.elf" "CapacitiveTouchpadDemoAVR-DA.hex"
+	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-size.exe" "CapacitiveTouchpadDemoAVR-DA.elf"
 	
 	
 
@@ -393,5 +393,5 @@ $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER
 clean:
 	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
 	-$(RM) $(C_DEPS_AS_ARGS)   
-	rm -rf "SnakeDemoAVRDA_QT2.elf" "SnakeDemoAVRDA_QT2.a" "SnakeDemoAVRDA_QT2.hex" "SnakeDemoAVRDA_QT2.lss" "SnakeDemoAVRDA_QT2.eep" "SnakeDemoAVRDA_QT2.map" "SnakeDemoAVRDA_QT2.srec" "SnakeDemoAVRDA_QT2.usersignatures"
+	rm -rf "CapacitiveTouchpadDemoAVR-DA.elf" "CapacitiveTouchpadDemoAVR-DA.a" "CapacitiveTouchpadDemoAVR-DA.hex" "CapacitiveTouchpadDemoAVR-DA.lss" "CapacitiveTouchpadDemoAVR-DA.eep" "CapacitiveTouchpadDemoAVR-DA.map" "CapacitiveTouchpadDemoAVR-DA.srec" "CapacitiveTouchpadDemoAVR-DA.usersignatures"
 	

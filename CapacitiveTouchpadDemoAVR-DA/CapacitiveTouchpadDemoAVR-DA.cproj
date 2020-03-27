@@ -13,7 +13,7 @@
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
     <AssemblyName>SnakeDemoAVRDA</AssemblyName>
-    <Name>SnakeDemoAVRDA_QT2</Name>
+    <Name>CapacitiveTouchpadDemoAVR-DA</Name>
     <RootNamespace>SnakeDemoAVRDA</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
