@@ -2,9 +2,10 @@
 ## Objective:
 This example consists a basic ‘Snake Game Demo’ implemented to demonstrate the 2D touch surface gestures with the help of Microchip® AVR128DA48 Curiosity Nano and QT2 Xplained Pro extension boards. This application example showcases the advanced touch capabilities of ‘PTC’ peripheral, and low power capabilities of the AVR-DA MCUs.
 
-## Related Application Note:
-[Touchpad With Built-In Surface Gesture Recognition Using AVR-DA Microcontroller](https://microchip.com/DS00003433)
+[Demo Video](https://www.youtube.com/watch?v=1dhbFVoyYqc)
 
+## Related Application Note:
+[Touchpad With Built-In Surface Gesture Recognition using Peripheral Touch Controller](https://microchip.com/DS00003433)
 
 ## Peripherals Involved:
 1. Peripheral Touch Controller (PTC)
