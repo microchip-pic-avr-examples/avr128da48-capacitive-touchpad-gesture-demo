@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.studio.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.studio.project.avr128da48-capactive-touchpad-gesture-demo",
+        "version": "1.0.2",
+        "displayName": "Capacitive Touchpad Demo using AVR DA MCU",
+        "projectName": "CapacitiveTouchpadDemoAVR-DA",
+        "shortDescription": "Firmware supporting the Application Note AN3433 'Touchpad With Built-In Surface Gesture Recognition Using AVR-DA microcontroller' ",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "Studio",
+            "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "Avr-Gcc",
+				"semverRange": "^5.4.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "^1.0.27"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.7.391"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,30 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "AVR128DA48",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "START",
+			"Touch"
             [
-               "Peripherals", ""
+               "Peripherals", "PTC"
             ],
             [
-               "Peripherals", ""
+               "Peripherals", "I2C"
             ]            			
         ],
         "peripherals": [
-            "",""
+            "PTC","I2C"
         ],
         "keywords": [
-            "",
-            ""			
+            "Touchpad",
+            "Capacitive Touch",
+			"Snake Game Demo",
+			"2D Gesture",
+			"QT2 Xplained Pro"
         ],
 		"additionalData": {
 			"longDescription": {
