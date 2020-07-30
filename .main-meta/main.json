@@ -39,7 +39,7 @@
         "author": "Microchip",
         "subcategories": [
             "START",
-			"Touch"
+			"Touch",
             [
                "Peripherals", "PTC"
             ],
