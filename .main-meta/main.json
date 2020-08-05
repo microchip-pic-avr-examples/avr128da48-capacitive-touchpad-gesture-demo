@@ -4,10 +4,10 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.avr128da48-capactive-touchpad-gesture-demo",
-        "version": "1.0.3",
+        "version": "1.0.4",
         "displayName": "Capacitive Touchpad Demo using AVR DA MCU",
         "projectName": "avr128da48-capacitive-touchpad-gesture-demo",
-        "shortDescription": "Firmware supporting the Application Note AN3433 'Touchpad With Built-In Surface Gesture Recognition Using AVR-DA microcontroller' ",
+        "shortDescription": "Firmware supporting the Application Note AN3433 <Touchpad With Built-In Surface Gesture Recognition Using AVR-DA microcontroller>",
         "ide": {
             "name": "Studio",
             "semverRange": ">=7.0.2397"
