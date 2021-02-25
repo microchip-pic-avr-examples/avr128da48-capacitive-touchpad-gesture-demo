@@ -1,4 +1,4 @@
-[![MCHP](https://cldup.com/U0qhLwBijF.png)](https://www.microchip.com)
+[![MCHP](Images/Setup.jpg)](https://www.microchip.com)
 ## Objective:
 This example consists a basic ‘Snake Game Demo’ implemented to demonstrate the 2D touch surface gestures with the help of Microchip® AVR128DA48 Curiosity Nano and QT2 Xplained Pro extension boards. This application example showcases the advanced touch capabilities of ‘PTC’ peripheral, and low power capabilities of the AVR-DA MCUs.
 
