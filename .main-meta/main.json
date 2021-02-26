@@ -51,7 +51,10 @@
             "PTC","I2C"
         ],
         "keywords": [
-            "Touch & Gesture",
+            "Touch",
+			"Gesture",
+			"Touchpad",
+			"QTouch",
             "Curiosity Nano",
 			"User Interface"
         ],
