@@ -4,17 +4,17 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.avr128da48-capactive-touchpad-gesture-demo",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "displayName": "Capacitive Touchpad Demo using AVR DA MCU",
         "projectName": "avr128da48-capacitive-touchpad-gesture-demo",
-        "shortDescription": "Firmware supporting the Application Note AN3433 <Touchpad With Built-In Surface Gesture Recognition Using AVR-DA microcontroller>",
+        "shortDescription": "Firmware supporting the Application Note AN3433 'Touchpad With Built-In Surface Gesture Recognition Using Peripheral Touch Controller' for AVR DA microcontroller family",
         "ide": {
-            "name": "Studio",
+            "name": "STUDIO",
             "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "Avr-Gcc",
+				"name": "AVR GCC",
 				"semverRange": "^5.4.0"
 			}
 		],
@@ -39,7 +39,7 @@
         "author": "Microchip",
         "subcategories": [
             "START",
-			"Touch",
+			"Touch & Gesture",
             [
                "Peripherals", "PTC"
             ],
@@ -51,11 +51,13 @@
             "PTC","I2C"
         ],
         "keywords": [
-            "Touchpad",
-            "Capacitive Touch",
-			"Snake Game Demo",
-			"2D Gesture",
-			"QT2 Xplained Pro"
+            "Touch",
+			"Gesture",
+			"Touchpad",
+			"QTouch",
+			"LED",
+            "Curiosity Nano",
+			"User Interface"
         ],
 		"additionalData": {
 			"longDescription": {
